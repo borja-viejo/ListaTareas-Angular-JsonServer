@@ -1,0 +1,10 @@
+<header>
+
+  <h1 class="text-white">{{ title }}</h1>
+  <app-button color="{{ mostrarAgregarTarea ? 'darkred' : 'green' }}"
+              text="{{ mostrarAgregarTarea ? 'Cerrar' : 'Agregar' }}"
+              class="ms-5"
+              (btnClick)="toggleAgregarTarea()">
+  </app-button>
+
+</header>

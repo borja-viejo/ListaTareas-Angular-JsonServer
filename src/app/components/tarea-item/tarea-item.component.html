@@ -1,0 +1,15 @@
+<div [ngClass]="{ recordatorio: tarea.recordatorio }"
+     class="tarea"
+     (dblclick)="onToggle(tarea)">
+
+  <h3>
+    {{ tarea.texto }}
+    <app-button color="darkred"
+                text="X"
+                class="ms-4"
+                (click)="onEliminar(tarea)">
+    </app-button>
+  </h3>
+  <p>{{ tarea.fecha }} | {{ tarea.hora }}</p>
+
+</div>

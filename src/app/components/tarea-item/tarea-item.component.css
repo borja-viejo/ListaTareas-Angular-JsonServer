@@ -1,0 +1,20 @@
+.tarea {
+    background: #f4f4f4;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tarea.recordatorio {
+    border-left: 5px solid green;
+}
+
+.tarea h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarea p {
+    font-weight: bold;
+}

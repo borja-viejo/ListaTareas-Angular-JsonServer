@@ -1,0 +1,8 @@
+<app-agregar-tarea (onGuardarTarea)="agregarTarea($event)"></app-agregar-tarea>
+
+<app-tarea-item *ngFor="let tarea of tareas"
+                [tarea]="tarea"
+                (onEliminarTarea)="eliminarTarea(tarea)"
+                (onToggleRecordatorio)="toggleRecordatorio(tarea)">
+
+</app-tarea-item>

@@ -1,0 +1,51 @@
+<form class="mb-4 text-white" *ngIf="mostrarAgregarTarea" (ngSubmit)="onSubmit()">
+
+  <div class="row mb-3">
+    <label for="textoTarea" class="col-sm-2 col-form-label fw-bold fs-6 ms-4">Tarea</label>
+    <div class="col-sm-9">
+      <input type="text" name="texto" id="textoTarea"
+             [(ngModel)]="texto"
+             placeholder="Agregar TAREA"
+             class="form-control bg-black text-white" />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="fechaTarea" class="col-sm-2 col-form-label fw-bold fs-6 ms-4">Fecha</label>
+    <div class="col-sm-9">
+      <input type="text" name="fecha" id="fechaTarea"
+             [(ngModel)]="fecha"
+             placeholder="dd/MM/yyyy"
+             class="form-control bg-black text-white" />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="horaTarea" class="col-sm-2 col-form-label fw-bold fs-6 ms-4">Hora</label>
+    <div class="col-sm-9">
+      <input type="text" name="hora" id="horaTarea"
+             [(ngModel)]="hora"
+             placeholder="ej. 12:00"
+             class="form-control bg-black text-white" />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="recordatorioTarea"
+           class="col-sm-5 col-form-label fw-bold fs-6 ms-4">
+      Activar recordatorio
+    </label>
+    <div class="col-sm-3 form-check form-switch">
+      <input type="checkbox" name="recordatorio" id="recordatorioTarea"
+             [(ngModel)]="recordatorio"
+             class="form-check-input">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <input type="submit" name="btnGuardar" id="btnGuardar"
+           value="Guardar"
+           class="btn btn-primary w-75 fw-bold fs-6" />
+  </div>
+
+</form>
